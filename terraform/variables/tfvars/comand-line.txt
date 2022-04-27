@@ -1,0 +1,11 @@
+setting variable using command-line (without terrform.tfvars file)
+
+
+terraform init
+
+terraform plan -var="instance_type=t2.micro"      # variable name followed by its value (variable name from variable.tf)
+
+terraform apply -var="instance_type=t2.micro"
+
+terraform destroy -var="instance_type=t2.micro"
+
