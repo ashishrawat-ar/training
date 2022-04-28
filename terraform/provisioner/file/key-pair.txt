@@ -1,0 +1,13 @@
+how to create key-pair (public-key, private-key) using ssh gen
+
+# ssh-keygen -t rsa -b 2048 
+
+By default, the above command will generate the public as well as private key at location ‘/home//.ssh’
+
+But we can override with a custom path : /home/ashish.rawat/training/keys/aws/aws_key
+
+then enter and enter  (skip passphrase)
+
+we use public-key.pub inside terrform script
+private-key use for ssh purpose, so that we can login into our aws machine once it starts
+
